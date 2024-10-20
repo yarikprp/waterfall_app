@@ -1,0 +1,19 @@
+﻿<Window x:Class="waterfall_app.Windows.QRCodeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="QR Код" Height="400" Width="300" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Image x:Name="ImageQRCode" Width="250" Height="250" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,10"/>
+
+        <StackPanel Grid.Row="1" Orientation="Vertical" HorizontalAlignment="Center" Margin="0,10">
+            <Button Content="Печать" Width="100" Click="PrintButton_Click" />
+            <Button Content="Закрыть" Width="100" Margin="0,10,0,0" Click="CloseButton_Click" />
+        </StackPanel>
+    </Grid>
+</Window>
